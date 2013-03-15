@@ -48,6 +48,9 @@ body {
 	text-shadow: $heading1TextShadow;
 }
 
+.reveal li, .reveal p {
+	margin-bottom: 1em;
+}
 
 /*********************************************
  * LINKS
@@ -161,3 +164,6 @@ body {
 	}
 
 
+.reveal pre {
+	font-size: 30px!important;
+}

@@ -1,22 +1,23 @@
 @import url(http://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic);
 /**
  * Sky theme for reveal.js.
- * 
+ *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #add9e4;
-  background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #add9e4));
-  background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background-color: #f7fbfc; }
+  background: #c388fb;
+  background: -moz-radial-gradient(center, circle cover, #e6ccff 0%, #c388fb 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #e6ccff), color-stop(100%, #c388fb));
+  background: -webkit-radial-gradient(center, circle cover, #e6ccff 0%, #c388fb 100%);
+  background: -o-radial-gradient(center, circle cover, #e6ccff 0%, #c388fb 100%);
+  background: -ms-radial-gradient(center, circle cover, #e6ccff 0%, #c388fb 100%);
+  background: radial-gradient(center, circle cover, #e6ccff 0%, #c388fb 100%);
+  background-color: #ac61f2; }
 
 .reveal {
   font-family: "Open Sans", sans-serif;
@@ -41,20 +42,23 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #333333;
-  font-family: "Quicksand", sans-serif;
-  line-height: 0.9em;
-  letter-spacing: -0.08em;
-  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  line-height: 1em;
+  letter-spacing: -0.07em;
+  text-transform: none;
   text-shadow: none; }
 
 .reveal h1 {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
 
+.reveal li, .reveal p {
+  margin-bottom: 1em; }
+
 /*********************************************
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: #3b759e;
+  color: #7500e3;
   text-decoration: none;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;
@@ -63,13 +67,13 @@ body {
   transition: color 0.15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #74a7cb;
+  color: #a74aff;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #264c66; }
+  background: #4e0097; }
 
 /*********************************************
  * IMAGES
@@ -87,7 +91,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #3b759e;
+  border-color: #7500e3;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
@@ -95,31 +99,31 @@ body {
  *********************************************/
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
-  border-right-color: #3b759e; }
+  border-right-color: #7500e3; }
 
 .reveal .controls div.navigate-right,
 .reveal .controls div.navigate-right.enabled {
-  border-left-color: #3b759e; }
+  border-left-color: #7500e3; }
 
 .reveal .controls div.navigate-up,
 .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #3b759e; }
+  border-bottom-color: #7500e3; }
 
 .reveal .controls div.navigate-down,
 .reveal .controls div.navigate-down.enabled {
-  border-top-color: #3b759e; }
+  border-top-color: #7500e3; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #74a7cb; }
+  border-right-color: #a74aff; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #74a7cb; }
+  border-left-color: #a74aff; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #74a7cb; }
+  border-bottom-color: #a74aff; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #74a7cb; }
+  border-top-color: #a74aff; }
 
 /*********************************************
  * PROGRESS BAR
@@ -128,9 +132,12 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #3b759e;
+  background: #7500e3;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+.reveal pre {
+  font-size: 30px!important; }
