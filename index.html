@@ -38,83 +38,52 @@
 			<div class="slides">
 
 				<section>
-					<h1>Making Internet with HTML and CSS (Part 2)</h1>
+					<h1>Making Internet with HTML and CSS</h1>
 				</section>
 
 				<section>
-					<h2>You're Invited...</h2>
-					<img class="fragment" src="img/invite1.png" />
-					<aside class="notes">
-			        <ul>
-			        	<li>I wanted to invite my friends and family...</li>
-			        	<li>Open up drawing</li>
-			        </ul>
-			    </aside>
-				</section>
-			
-				<section>
-					<h1>How do we make it into "The Internet"?</h1>
+					<h2>The Internet!</h2>
+					<p>How do you think web sites are made?</p>
+					<ul>
+						<li>Did someone draw it on paper and scan it into the computer?</li>
+						<li>Did someone make it with a word processor (Like Microsoft Word?)</li>
+						<li>Did someone yell at the computer until it made a website?</li>
+					</ul>
 				</section>
 
 				<section>
-					<h2>The browser</h2>
-					<img class="fragment" src="https://antzmedia.com/blgimg/cartoon.jpg">
-					<h3 class="fragment">The browser is there to be <strong>bossed around</strong></h3>
-					<aside class="notes">
-						<ul>
-							<li>browser is where everything happens</li>
-							<li>Can anyone tell me what a browser is?</li>
-							<li>It's a reader or interpreter that displays what you tell it to display the way you tell it to display things</li>
-							<li>Browser can do whatever you want it to do</li>
-						</ul>
-					</aside>
+					<h2>Nope! The Internet is made with... Code!</h2>
+					<p>Code is how we tell computers what to do. There are lots of different languages of code, but they all translate your goals and ideas into information that computers understand</p>
+					<p>Web sites are made up of a language called <strong>HTML</strong></p>
 				</section>
 
 				<section>
-					<section>
-							
-						    <img src="img/invite2.png" />
-						    <aside class="notes">
-						    	<ul>
-						    		<li>When you look at this document, it makes sense to you because you have eyes.</li>
-						    		<li>You can tell that the big text is more important, and that the bullets indicate a list</li>
-						    	</ul>
-						    </aside>
-					</section>
-			    <section>
-			    	<img src="img/invite3.png" />
-			    </section>
-
-			    <section>
-			    	<img src="img/invite4.png" />
-			    </section>
-
-			    <section>
-			    	<img src="img/invite5.png" />
-			    </section>
-
-			    <section>
-			    	<img src="img/invite6.png" />
-			    </section>
+					<h2>What's a browser?</h2>
+					<ul>
+						<li>A browser reads the HTML code you write, and displays all the content you told it to in your code</li>
+						<li>Browsers aren't very smart: they only understand a couple languages. They don't understand english, but they do know HTML</li>
+						<li>You have to be really specific about what you tell the browser to do, because it's not as smart as you!</li>
+					</ul>
 				</section>
-
+				
 				<section>
-					<h2>But the browser isn't a smart human like you</h2>
-					<img src="img/invite7.png" />
-					<aside class="notes">
-						<p>He can't use his eyes and his understanding to figure out how this document is organized, so we have to tell him exactly how it works</p>
-					</aside>
+					<h2>Writing HTML code</h2>
+					<ul>
+						<li>HTML is made up of building blocks called <strong>tags</strong>. Tags tell the browser what kind of content you want displayed on the page.</li>
+						<li>For example, we tell the browser that we want a paragraph using a tag called a "paragraph tag". </li>
+						<li>A paragraph tag looks like <strong><code>&lt;p></code></strong></li>
+					</ul>
 				</section>
 
 				<section>
 					<ul>
-						<li>The browser can't use its <strong>eyes</strong> and <strong>brain</strong> to figure out how to display this document, so we have to tell it exactly what to do</li>
-						<li class="fragment">We can tell the browser what to do by using a special language called <strong>HTML</strong></li>
-						<li class="fragment">HTML uses things called <strong>tags</strong> to tell the browser where each element starts and ends</li>
-						<h2 class="fragment">Be <strong>Bossy</strong> but also <strong>Specific</strong></h2>
+						<li>Because browsers aren't very smart, it doesn't know where your paragraph starts and stops</li>
+						<li>To make sure the browser understands us, we put our paragraph <strong>in between</strong> two paragraph tags</li>
+						<li>The paragraph tag at the end of a paragraph has a <strong>slash (/)</strong> after the first bracket to let the browser know that this is an ending tag.</li>
+						<li><strong><code>&lt;p>This is a paragraph&lt;/p></code></strong></li>
 					</ul>
 				</section>
-				
+
 				<section>
 					<h2>HTML Tags</h2>
 					<p>Here's a really simple web page: </p>
@@ -136,42 +105,196 @@
 					<p>There are lots of different kinds of elements, some tell the browser about text elements like <strong>paragraphs, lists</strong> and <strong>headings</strong>.
 					<p class="fragment">Other elements are for different parts of web pages, like <strong>links</strong> and <strong>images</strong></p>
 				</section>
+<!-- 
+				<section>
+					<h2>Sections and Divs</h2>
+					<p class="fragment">You can organize your HTML documents by splitting content up into <strong>Sections</strong> or <strong>Divisions</strong></p>
+					<p class="fragment">You can divide content into divisions with the <code>&lt;div></code> tag</p>
+					<p class="fragment">You can divide content into sections with the <code>&lt;section></code> tag</p>
+					<p class="fragment"><code>&lt;div></code> tags are more general and can be used whenever you want to divide content into smaller parts</p>
+					<p class="fragment"><code>&lt;section></code> tags are more specific and are used to split you page up into sections or parts</p>
+				</section> -->
+
+				<section>
+					<h2>Headings</h2>
+					<p class="fragment">Headings are important text that you want your readers to pay attention to</p>
+					<p class="fragment">There are 6 kinds of heading tags in HTML</p>
+					<p class="fragment"><code>&lt;h1>, &lt;h2>, &lt;h3>, &lt;h4>, &lt;h5>, and &lt;h6></code></p>
+					<p class="fragment"><code>&lt;h1></code> is the most important (biggest) heading</p>
+					<p class="fragment"><code>&lt;h6></code> is the least important (smallest) heading</p>
+					<p class="fragment">You don't have to use all the headings (you might only use h1 and h2)</p>
+					<p class="fragment">But you have to use them in order (h1 comes first!)</p>
+				</section>
+
+				<section>
+					<h2>Mozilla Thimble</h2>
+					<p>In your browser, go to <a href="https://webmaker.org">Webmaker.org</a></p>
+					<p>Look for a project called "pics from my last trip". It looks like a photo of trees, and has a red "Starter Project" banner on it. Click on this project.</p>
+					<p>Click the "Remix" button in the top right of the project page.</p>
+					<img src="http://cl.ly/QDx8/Screen%20Shot%202013-07-13%20at%205.33.26%20PM.png"/>
+				</section>
+
+				<section>
+					<h2>Let's take a look at the code:</h2>
+					<ul>
+						<li>Notice how there's black italic text between <strong><code>&lt;!--</code></strong> and <srong><code>--></code></srong> symbols</li>
+						<li>These are called <strong>Comments</strong>. They don't show up on the webpage, they're just there to help you out.</li>
+					</ul>
+				</section>
+
+				<section>
+					<ul>
+						<li>Also notice that there are two main sections to the code: The parts between the two <code>&lt;head></code> tags, and the parts between the two <code>&lt;body></code> tags.</li>
+						<li>Everything inside the <code>&lt;head></code> tags is invisible on the webpage, the head is just where we tell the browser information about our page, like the title</li>
+						<li>The <code>&lt;body></code> is where all our content goes, that's the part that shows up on our page</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Let's start customizing our code!</h2>
+					<ul>
+						<li>Remember our 6 kinds of headings? Let's look for the biggest one and change it. Right now, the <code>&lt;h1></code> tag shows the initials "JB". </li>
+						<li>Look for the part of your code that says <code>&lt;h1 class="logo">JB&lt;/h1></code></li>
+						<li>Change the text <strong>between</strong> the two tags to whatever you like: some initials, your group name, or the name of your website</li>
+						<li>Watch the changes happen in the preview window on the right side!</li>
+					</ul>
+				</section>
+
+				<section>
+					<ul>
+						<li>Next, let's change the title that says "My Photographs" into something else, like an introduction to your website or a welcome message</li>
+						<li>Look for the part of code that says <code>&lt;h2 class="title">My Photographs&lt;/h2></code></li>
+						<li>Change the text <strong>between</strong> the two <code>&lt;h2></code> tags to your own title</li>
+						<li>Repeat the same process for the first paragraph on the page (remember, those are <code>&lt;p></code> tags)</li>
+					</ul>
+				</section>
 
 				<section>
 					<h2>Hyper-links</h2>
-					<p class="fragment"><strong>Links</strong> are one of the most important parts of the internet</p>
-					<p class="fragment">A link element is called an <strong>anchor</strong> in HTML, and the tag is just an <code>a</code></p>
-					<pre class="fragment"><code>&lt;a href="http://google.com">Google&lt;/a></code></pre>
-					<aside class="notes">
-						<p>This part that says "h-ref" is called an attribute. An attribute gives the browser extra information about the element you want to make. In this case, the information we want to tell the browser is the link's hypertext-reference.</p>
-						<p>It sounds like a confusing term, but really it just means "address", like the address that you see in the bar at the top of your browser. This link has an attribute that tells the browser that when someone clicks on the link, they should go to the address google.com</p>
-					</aside>
+					<ul>
+						<li class=""><strong>Links</strong> are one of the most important parts of the internet</li>
+						<li class="">A link element is called an <strong>anchor</strong> in HTML, and the tag is just an <code>a</code></li>
+					</ul>
+					<pre class=""><code>&lt;a href="http://google.com">Google&lt;/a></code></pre>
+				</section>
+
+				<section>
+						<ul>
+						<pre class=""><code>&lt;a href="http://google.com">Google&lt;/a></code></pre>
+
+						<li>This part that says "h-ref" is called an attribute. An attribute gives the browser extra information about the element you want to make. In this case, the information we want to tell the browser is the link's hypertext-reference.</li>
+						<li>It sounds like a confusing term, but really it just means "address", like the address that you see in the bar at the top of your browser. This link has an attribute that tells the browser that when someone clicks on the link, they should go to the address google.com</li>
+						</ul>
+				</section>
+
+				<section>
+					<h2>Let's add a link</h2>
+					<ul>
+						<li>We're going to make a link to the interview you wrote.</li>
+						<li>Underneath your paragraph, add an anchor tag like the one below.</li>
+						<pre class=""><code>&lt;a href="http://google.com">My Interview&lt;/a></code></pre>
+						<li>Replace the part that says "http://google.com" (the part <strong>inside</strong> the quotation marks) with the link to your interview.</li>
+						<li>Replace the part that says "My Interview" with the title of your interview (that's the part people will click on)</li>
+					</ul>
 				</section>
 
 				<section>
 					<h2>Images</h2>
-					<p class="fragment">Images are like hyperlinks because they also use an <strong>attribute</strong> to tell the browser a web address</p>
-					<pre class="fragment"><code>&lt;img src="http://ladieslearningcode.com/wp-content/uploads/2013/02/IMG_3800.jpg" /></code></pre>
-					<p class="fragment">Instead of an <code>href</code> attribute, an image has a <code>src</code> attribute, which tells the browser the <strong>source</strong> of the image</p>
-					<aside class="notes">
+					<p class="">Images are like hyperlinks because they also use an <strong>attribute</strong> to tell the browser a web address</p>
+					<pre class=""><code>&lt;img src="http://ladieslearningcode.com/wp-content/uploads/2013/02/IMG_3800.jpg" /></code></pre>
+					<p class="">Instead of an <code>href</code> attribute, an image has a <code>src</code> attribute, which tells the browser the <strong>source</strong> of the image</p>
 						<p>The soure of the image tells the browser where to look for the picture. The browser then goes and gets the image from the source you tell it, and displays it in the web page. </p>
-					</aside>
 				</section>
 
 				<section>
-					<h2>Let's take what we've learned about HTML and build an invitation to our Demo Day using <a href="http://lovebomb.me">Love Bomb</a></h2>
-				</section>
-
-				<section>
-					<h2>Demo Day Info</h2>
+					<h2>Let's add an image</h2>
 					<ul>
-						<li>Friday, March 15</li>
-						<li>3:30PM-5:00PM</li>
-						<li>366 Adelaide St. W, Suite 500</li>
-					
+						<li>We're going to replace the first tree picture with an animated gif.</li>
+						<li>Find the part in the code that says:</li>
+						<pre><code>&lt;img src="http://farm8.staticflickr.com/...jpg"></code></pre>
+						<li>And replace the src value with the link to your animated gif</li>
+						<pre><code>&lt;img src="http://flickr.com/cat.gif"></code></pre>
 					</ul>
 				</section>
 
+				<section>
+					<h2>Nesting</h2>
+					<p class="fragment">In HTML, you're allowed to have tags inside other tags</p>
+					<p class="fragment">This is called <strong>Nesting</strong></p>	
+					<p class="fragment">Nesting can make it easy to get lost if you don't pay close attention to where you are</p>
+					<pre class="fragment"><code>
+&lt;section>
+	&lt;p>Paragraph inside of a section!&lt;/p>
+&lt;/section>
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Don't get lost!</h2>
+					<p class="fragment"><strong>BEFORE</strong> you start editing any of the code, make sure you know where you are.</p>
+					<p class="fragment">Remember, most HTML tags come in pairs (Except <code>&lt;img></code>), so whenever you delete or change something, make sure you've found both parts of the pair.</p>
+				</section>
+
+				<section>
+					<h2>Add in your crests!</h2>
+					<ul>
+						<li>We're going to add in the crests where the landscape photos are</li>
+						<li>Since there are only two landscape photos, we'll have to duplicate the section 2 times to make room for all 6 crests</li>
+						<li>The landscape pictures are inside an <strong>unordered list</strong></li>
+						<li>The unordered list tag looks like <code>&lt;ul></code></li>
+						<li>Each list item inside the unordered list is a <code>&lt;li></code> tag</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Unordered Lists</h2>
+					<ul>
+						<li>Lists are a good example of <strong>nesting</strong></li>
+						<li>List items (<code>&lt;li></code>) are <em>nested</em> inside unordered lists (<code>&lt;ul></code>)</li>
+<pre><code>
+&lt;ul>
+	&lt;li>First list item!&lt;/li>
+	&lt;li>Second list item!&lt;/li>
+&lt;/ul>
+</code></pre>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Duplicate two list items</h2>
+					<ul>
+						<li>Look for the part in the code that has a comment that says "A Picture".</li>
+						<li><strong>Copy</strong> everything between the two <code>&lt;ul></code> tags</li>
+						<li>You should start selecting right <strong>after</strong> the part that looks like </li>
+						<pre><code>&lt;ul class="grid half-width group"></code></pre>
+						<li>And end right <strong>before</strong> the part that looks like:</li>
+						<pre><code>&lt;ul></code></pre>
+					</ul>
+				</section>
+
+				<section>
+					<ul>
+						<li>Next, <strong>Paste</strong> those two list items right before the <code>&lt;/ul></code> tag (the end of the unodered list)</li>
+						<li>Do this twice, so that we now have 6 list items</li>
+						<li>Next, replace the <code>src</code> values for each image with the links to your crests</li>
+						<li>You can replace the text between each of the <code>&lt;h2></code> tags with your names!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Add your logo!</h2>
+					<ul>
+						<li>If you want the logo for your site to be more exciting, why not replace it with the logo picture you made!</li>
+						<li>Find the <code>&lt;h2></code> tag that we changed earlier (the part in the green circle)</li>
+						<li><strong>Delete</strong> the <code>&lt;h2></code> tag</li>
+						<li>Add in a <code>&lt;img></code> tag, and make the src value the link to your logo</code></li>
+						<pre><code>&lt;img src="http://flickr.com/logo.png" ></code></pre>
+					</ul>
+				</section>
+
+				<section>
+					<h2>We're going to make our sites look pretty with CSS now, but you'll have time to write more content and add more pictures afterwards!</h2>
+				</section>
 				<section>
 					<h1>Styling with CSS</h1>
 				</section>
@@ -214,7 +337,133 @@
 					</pre></code>
 					<p>Each CSS rule is made up of a <strong>selector</strong> and one or more <strong>properties</strong></p>
 					<p>A property is the name of the thing you want to control. Each property has a <strong>value</strong> that you can change.</p>
-					<p class="fragment">In this example, <code>p</code> is the <strong>selector</strong>, <code>color</code> is the <strong>property</strong>, and <code>red</code> is the <strong>value</strong>.</p> 
+					<p class="">In this example, <code>p</code> is the <strong>selector</strong>, <code>color</code> is the <strong>property</strong>, and <code>red</code> is the <strong>value</strong>.</p> 
+				</section>
+
+				<section>
+					<p>CSS goes in between <code>&lt;style></code> tags in our HTML</p>
+					<p>This lets the browser know that we're writing CSS now, not HTML</p>
+					<p>Look for the <code>&lt;style></code> tags at the end of the HTML document in thimble</p>
+				</section>
+
+				<section>
+					<h2>CSS Selectors</h2>
+					<ul>
+						<li>There are several different ways you can target HTML elements to change their styles</li>
+						<li>We can select elements by the kind of element, for example, we can select all paragraphs with:</li>
+						<pre><code>p {}</code></pre>												
+					</ul>
+				</section>
+
+				<section>
+					<ul>
+						<li>You might have noticed in the HTML that some of the elements have an attribute called a <code>class</code></li>
+						<pre><code>&lt;h1 class="logo"></code></pre>
+						<li>This is so that we can write a selector in the CSS to pick out elements by class</li>
+						<li>To pick out the <code>&lt;h1></code> with a class of <code>logo</code> we write:</li>
+						<pre><code>h1.logo {}</code></pre>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Let's change the background of our header</h2>
+					<ul>
+						<li>At the very top of our website, there's a grey background behind our logo</li>
+						<li>Grey is boring, change it to your favourite colour!</li>
+						<li>Find the selector for the <code>&lt;header></code> element</li>
+					</ul>
+				</section>
+
+				<section>
+<pre><code>
+header {
+	background: #e0e0e0;
+}
+</code></pre>					
+				<ul>
+					<li>This code means that the <code>&lt;header></code> element will have a <code>background</code> that is <code>#e0e0e0</code></li>
+					<li><code>#e0e0e0</code> is a <strong>hex</strong> code. It's a code that means a colour in computer language. In this case, it means light grey.</li>
+					<li><strong>Delete</strong> the part that says <code>#e0e0e0</code> and write the word <strong>red</strong></li>
+					<li>Make sure you leave the colon and semi-colon where they were.</li>
+				</ul>
+				</section>
+
+				<section>
+<pre><code>
+header {
+	background: red;
+}
+</code></pre>
+					<ul>
+						<li>You can try all sorts of colours here: pink, blue, green, black, and more</li>
+						<li>If you want to get a specific shade of your favourite colour, you'll need a <strong>hex code</strong></li>
+						<li>You can find hex codes for colours at <a href="http://www.colorpicker.com/">colorpicker.com</a></li>
+					</ul>					
+				</section>
+
+				<section>
+					<p>How would we change the background colour of the whole page?</p>
+					<p>Remember how the <code>&lt;body></code> element holds <strong>all</strong> the content on our page?</p>
+					<p>Find the selector for the <code>body</code> element and change the background colour</p>
+<pre class=""><code>
+body {
+	background: #CCF2FF;
+}
+</code></pre>					
+				</section>
+
+				<section>
+					<h2>Changing Fonts</h2>
+					<ul>
+						<li>In the CSS rules for the <code>body</code>, there's a <code>font-family</code> property.</li>
+						<li>Right now the font is set to <em>Georgia</em></li>
+						<li>You can change the font to <code>Arial, Helvetica, Times, Verdana, Courier, or Impact</code></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Let's change our main heading</h2>
+					<ul>
+						<li>Remember how we changed the text of the <code>&lt;h2 class="title"></code>?</li>
+						<li>Now let's change the style</li>
+						<li>Find the selector for <code>h2.title</code></li>
+						<li>We can change the text colour with the <code>color</code> property</li>
+<pre><code>
+h2.title {
+	color: darkblue;
+}
+</code></pre>						
+					</ul>
+				</section>
+
+				<section>
+					<ul>
+						<li>We can make the font be not italic by changing the <code>font-style</code> value to <code>normal</code></li>
+						<li>We can make it bold setting the <code>font-weight</code> property to <code>bold</code></li>
+						<li>We can make the text bigger by changing the <code>font-size</code> property to something like <code>34px</code></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Have fun with HTML and CSS</h2>
+					<ul>
+						<li>Try adding more content: replace all the default text with your own writing</li>
+						<li>Replace images with pictures that are relevant to your topic</li>
+						<li>Customize the way your site works by changing CSS properties</li>
+						<li>Hover your mouse over a section in the preview to find the HTML code for that section</li>
+						<li>Then try to find the matching selector in the CSS!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Fun CSS Ideas</h2>
+<pre><code>
+text-decoration: underline;
+text-transform: uppercase;
+text-shadow: 1px 1px 3px pink;
+border: 2px dotted green;
+border-radius: 50%; /* use on an image */
+</code></pre>					
 				</section>
 
 			</div>
